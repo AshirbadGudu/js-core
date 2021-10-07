@@ -1,0 +1,24 @@
+{
+  "name": "js-helpers",
+  "version": "1.0.0",
+  "description": "A set of js helper functions ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshirbadGudu/js-helpers.git"
+  },
+  "keywords": [
+    "javascript",
+    "js-helpers",
+    "js-utils"
+  ],
+  "author": "Ashirbad Panigrahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshirbadGudu/js-helpers/issues"
+  },
+  "homepage": "https://github.com/AshirbadGudu/js-helpers#readme"
+}
