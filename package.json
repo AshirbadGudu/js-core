@@ -1,5 +1,5 @@
 {
-  "name": "js-helpers",
+  "name": "@AshirbadGudu/js-helpers",
   "version": "1.0.0",
   "description": "A set of js helper functions ",
   "main": "index.js",
@@ -11,9 +11,12 @@
     "url": "git+https://github.com/AshirbadGudu/js-helpers.git"
   },
   "keywords": [
+    "js",
     "javascript",
     "js-helpers",
-    "js-utils"
+    "js-utils",
+    "helper",
+    "functions"
   ],
   "author": "Ashirbad Panigrahi",
   "license": "ISC",
