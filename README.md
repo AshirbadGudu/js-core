@@ -7,19 +7,19 @@
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-npm i @AshirbadGudu/js-utils
+npm i @ashirbadgudu/js-utils
 ```
 
 ## Usage
 
 ```js
-const { getArrFromObj } = require("@AshirbadGudu/js-utils");
+const { getArrFromObj } = require("@ashirbadgudu/js-utils");
 ```
 
 ### Example
 
 ```js
-const { getArrFromObj } = require("@AshirbadGudu/js-utils");
+const { getArrFromObj } = require("@ashirbadgudu/js-utils");
 
 const obj = {
   "user-1": {
