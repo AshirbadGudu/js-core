@@ -1,5 +1,5 @@
 {
-  "name": "js-utils",
+  "name": "@AshirbadGudu/js-utils",
   "version": "1.0.0",
   "description": "A set of js utility functions",
   "main": "index.js",
