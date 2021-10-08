@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AshirbadGudu/js-helpers.git"
+    "url": "git+https://github.com/AshirbadGudu/js-utils.git"
   },
   "keywords": [
     "js",
@@ -21,7 +21,7 @@
   "author": "Ashirbad Panigrahi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AshirbadGudu/js-helpers/issues"
+    "url": "https://github.com/AshirbadGudu/js-utils/issues"
   },
-  "homepage": "https://github.com/AshirbadGudu/js-helpers#readme"
+  "homepage": "https://github.com/AshirbadGudu/js-utils#readme"
 }
