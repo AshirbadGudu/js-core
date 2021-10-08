@@ -1,7 +1,7 @@
 {
-  "name": "@AshirbadGudu/js-helpers",
+  "name": "js-utils",
   "version": "1.0.0",
-  "description": "A set of js helper functions ",
+  "description": "A set of js utility functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +13,8 @@
   "keywords": [
     "js",
     "javascript",
-    "js-helpers",
     "js-utils",
+    "utility",
     "helper",
     "functions"
   ],

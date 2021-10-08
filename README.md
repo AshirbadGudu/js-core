@@ -1,25 +1,25 @@
-# js-helpers
+# js-utils
 
-> Contains a set of javascript helper functions
+> Contains a set of javascript utility functions
 
 ## Installation
 
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-npm i @AshirbadGudu/js-helpers
+npm i js-utils
 ```
 
 ## Usage
 
 ```js
-const { getArrFromObj } = require("@AshirbadGudu/js-helpers");
+const { getArrFromObj } = require("js-utils");
 ```
 
 ### Example
 
 ```js
-const { getArrFromObj } = require("@AshirbadGudu/js-helpers");
+const { getArrFromObj } = require("js-utils");
 
 const obj = {
   "user-1": {
