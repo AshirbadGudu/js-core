@@ -1,19 +1,19 @@
 {
-  "name": "@ashirbadgudu/js-utils",
+  "name": "@ashirbad/js-core",
   "version": "1.0.0",
-  "description": "A set of js utility functions",
+  "description": "A set of js core utility functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AshirbadGudu/js-utils.git"
+    "url": "git+https://github.com/AshirbadGudu/js-core.git"
   },
   "keywords": [
     "js",
     "javascript",
-    "js-utils",
+    "js-core",
     "utility",
     "helper",
     "functions"
@@ -21,7 +21,7 @@
   "author": "Ashirbad Panigrahi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AshirbadGudu/js-utils/issues"
+    "url": "https://github.com/AshirbadGudu/js-core/issues"
   },
-  "homepage": "https://github.com/AshirbadGudu/js-utils#readme"
+  "homepage": "https://github.com/AshirbadGudu/js-core#readme"
 }

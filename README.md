@@ -1,25 +1,25 @@
 # js-utils
 
-> Contains a set of javascript utility functions
+> Contains a set of javascript core utility functions
 
 ## Installation
 
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-npm i @ashirbadgudu/js-utils
+npm i @ashirbad/js-core
 ```
 
 ## Usage
 
 ```js
-const { getArrFromObj } = require("@ashirbadgudu/js-utils");
+const { getArrFromObj } = require("@ashirbad/js-core");
 ```
 
 ### Example
 
 ```js
-const { getArrFromObj } = require("@ashirbadgudu/js-utils");
+const { getArrFromObj } = require("@ashirbad/js-core");
 
 const obj = {
   "user-1": {
