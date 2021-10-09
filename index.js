@@ -10,6 +10,26 @@ const getArrFromSnap = (snap, key = "id", arr = []) => {
     for (const id in snapVal) arr.push({ ...snapVal[id], [key]: id });
   return arr;
 };
+// Get single array from a nested snapshot
+const getArrFromNestedSnap = (
+  snap,
+  primary_key = "id",
+  secondary_key = "_id",
+  arr = []
+) => {
+  const snapVal = snap.val();
+  if (snap.exists())
+    for (const _id in snapVal) {
+      for (const id in snapVal[_id]) {
+        arr.push({
+          ...snapVal[_id][id],
+          [primary_key]: id,
+          [secondary_key]: _id,
+        });
+      }
+    }
+  return arr;
+};
 // Format Currency
 const formatCurrency = (amount, currency_code = "en-IN") =>
   new Intl.NumberFormat(currency_code, {
@@ -17,4 +37,19 @@ const formatCurrency = (amount, currency_code = "en-IN") =>
     currency: "INR",
   }).format(amount);
 
-module.exports = { getArrFromObj, getArrFromSnap, formatCurrency };
+const getFutureDays = (numberOfDays = 7) => {
+  const arr = [...Array(numberOfDays).keys()].map((item, i) => {
+    const nextDay = new Date();
+    const futureDate = nextDay.getDate() + i;
+    nextDay.setDate(futureDate);
+    return nextDay;
+  });
+  return arr;
+};
+
+module.exports = {
+  getArrFromObj,
+  getArrFromSnap,
+  formatCurrency,
+  getArrFromNestedSnap,
+};
