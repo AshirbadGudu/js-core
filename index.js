@@ -36,7 +36,7 @@ const formatCurrency = (amount, currency_code = "en-IN") =>
     style: "currency",
     currency: "INR",
   }).format(amount);
-
+// Get future days
 const getFutureDays = (numberOfDays = 7) => {
   const arr = [...Array(numberOfDays).keys()].map((item, i) => {
     const nextDay = new Date();
@@ -52,4 +52,5 @@ module.exports = {
   getArrFromSnap,
   formatCurrency,
   getArrFromNestedSnap,
+  getFutureDays,
 };
