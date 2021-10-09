@@ -1,4 +1,4 @@
-# js-utils
+# @ashirbad/js-core [![NPM version](https://img.shields.io/npm/v/@ashirbad/js-core.svg?style=flat)](https://www.npmjs.com/package/@ashirbad/js-core)
 
 > Contains a set of javascript core utility functions
 
