@@ -46,6 +46,19 @@ const getFutureDays = (numberOfDays = 7) => {
   });
   return arr;
 };
+// Get day name with index and by default return today name
+const getDayName = (dayIndex = new Date().getDay()) => {
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return days[dayIndex];
+};
 
 module.exports = {
   getArrFromObj,
@@ -53,4 +66,5 @@ module.exports = {
   formatCurrency,
   getArrFromNestedSnap,
   getFutureDays,
+  getDayName,
 };
