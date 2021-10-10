@@ -1,4 +1,4 @@
-# @ashirbad/js-core [![NPM version](https://img.shields.io/npm/v/@ashirbad/js-core.svg?style=flat)](https://www.npmjs.com/package/@ashirbad/js-core)
+# `@ashirbad/js-core` [![NPM version](https://img.shields.io/npm/v/@ashirbad/js-core.svg?style=flat)](https://www.npmjs.com/package/@ashirbad/js-core) [![NPM version](https://badgen.net/bundlephobia/minzip/@ashirbad/js-core)](https://www.npmjs.com/package/@ashirbad/js-core)
 
 > Contains a set of javascript core utility functions
 
@@ -8,6 +8,12 @@ Install with [npm](https://www.npmjs.com/):
 
 ```sh
 npm i @ashirbad/js-core
+```
+
+Install with [yarn](https://classic.yarnpkg.com/en/):
+
+```sh
+yarn add @ashirbad/js-core
 ```
 
 ## Usage
