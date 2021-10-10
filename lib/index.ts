@@ -1,21 +1,26 @@
 // Convert an object to array
-const getArrFromObj = (object, arr = []) => {
+const getArrFromObj = (object: { [x: string]: any }, arr: any[] = []) => {
   for (const id in object) arr.push({ id, ...object[id] });
   return arr;
 };
 // Convert Firebase snapshot to array
-const getArrFromSnap = (snap, key = "id", arr = []) => {
+const getArrFromSnap = (
+  snap: { val: () => any; exists: () => boolean },
+  key = "id",
+  arr: any[] = []
+) => {
   const snapVal = snap.val();
   if (snap.exists())
     for (const id in snapVal) arr.push({ ...snapVal[id], [key]: id });
   return arr;
 };
+
 // Get single array from a nested snapshot
 const getArrFromNestedSnap = (
-  snap,
+  snap: { val: () => any; exists: () => any },
   primary_key = "id",
   secondary_key = "_id",
-  arr = []
+  arr: any[] = []
 ) => {
   const snapVal = snap.val();
   if (snap.exists())
@@ -30,15 +35,17 @@ const getArrFromNestedSnap = (
     }
   return arr;
 };
+
 // Format Currency
-const formatCurrency = (amount, currency_code = "en-IN") =>
+const formatCurrency = (amount: number, currency_code = "en-IN") =>
   new Intl.NumberFormat(currency_code, {
     style: "currency",
     currency: "INR",
   }).format(amount);
+
 // Get future days
 const getFutureDays = (numberOfDays = 7) => {
-  const arr = [...Array(numberOfDays).keys()].map((item, i) => {
+  const arr = Array.from(Array(numberOfDays).keys()).map((item, i) => {
     const nextDay = new Date();
     const futureDate = nextDay.getDate() + i;
     nextDay.setDate(futureDate);
@@ -63,8 +70,8 @@ const getDayName = (dayIndex = new Date().getDay()) => {
 module.exports = {
   getArrFromObj,
   getArrFromSnap,
-  formatCurrency,
   getArrFromNestedSnap,
+  formatCurrency,
   getFutureDays,
   getDayName,
 };

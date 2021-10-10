@@ -2,7 +2,11 @@
   "name": "@ashirbad/js-core",
   "version": "1.0.2",
   "description": "A set of js core utility functions",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "node .",
     "build": "tsc"
