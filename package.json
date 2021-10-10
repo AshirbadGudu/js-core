@@ -4,7 +4,8 @@
   "description": "A set of js core utility functions",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/AshirbadGudu/js-core/issues"
   },
-  "homepage": "https://github.com/AshirbadGudu/js-core#readme"
+  "homepage": "https://github.com/AshirbadGudu/js-core#readme",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
 }
