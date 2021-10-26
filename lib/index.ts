@@ -1,3 +1,5 @@
+import { currency, day } from "./types";
+
 // Convert an object to array
 const getArrFromObj = (object: { [x: string]: any }, arr: any[] = []) => {
   for (const id in object) arr.push({ id, ...object[id] });
@@ -37,7 +39,7 @@ const getArrFromNestedSnap = (
 };
 
 // Format Currency
-const formatCurrency = (amount: number, currency_code = "INR") =>
+const formatCurrency = (amount: number, currency_code: currency = "INR") =>
   new Intl.NumberFormat(currency_code, {
     style: "currency",
     currency: currency_code,
@@ -54,8 +56,8 @@ const getFutureDays = (numberOfDays = 7) => {
   return arr;
 };
 // Get day name with index and by default return today name
-const getDayName = (dayIndex = new Date().getDay()) => {
-  const days = [
+const getDayName = (dayIndex = new Date().getDay()): day => {
+  const days: day[] = [
     "Sunday",
     "Monday",
     "Tuesday",
