@@ -37,10 +37,10 @@ const getArrFromNestedSnap = (
 };
 
 // Format Currency
-const formatCurrency = (amount: number, currency_code = "en-IN") =>
+const formatCurrency = (amount: number, currency_code = "INR") =>
   new Intl.NumberFormat(currency_code, {
     style: "currency",
-    currency: "INR",
+    currency: currency_code,
   }).format(amount);
 
 // Get future days
