@@ -69,7 +69,7 @@ const getDayName = (dayIndex = new Date().getDay()): day => {
   return days[dayIndex];
 };
 
-module.exports = {
+export {
   getArrFromObj,
   getArrFromSnap,
   getArrFromNestedSnap,
