@@ -16,7 +16,6 @@ const getArrFromSnap = (
     for (const id in snapVal) arr.push({ ...snapVal[id], [key]: id });
   return arr;
 };
-
 // Get single array from a nested snapshot
 const getArrFromNestedSnap = (
   snap: { val: () => any; exists: () => any },
@@ -37,14 +36,12 @@ const getArrFromNestedSnap = (
     }
   return arr;
 };
-
 // Format Currency
 const formatCurrency = (amount: number, currency_code: currency = "INR") =>
   new Intl.NumberFormat(currency_code, {
     style: "currency",
     currency: currency_code,
   }).format(amount);
-
 // Get future days
 const getFutureDays = (numberOfDays = 7) => {
   const arr = Array.from(Array(numberOfDays).keys()).map((item, i) => {
@@ -68,6 +65,21 @@ const getDayName = (dayIndex = new Date().getDay()): day => {
   ];
   return days[dayIndex];
 };
+// Create a function that returns array of dates between 2 dates
+const getDatesBetween = (
+  startDate: Date,
+  endDate: Date,
+  includeEndDate?: boolean
+): Date[] => {
+  const dates = [];
+  const currentDate = startDate;
+  while (currentDate < endDate) {
+    dates.push(new Date(currentDate));
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+  if (includeEndDate) dates.push(endDate);
+  return dates;
+};
 
 export {
   getArrFromObj,
@@ -76,4 +88,5 @@ export {
   formatCurrency,
   getFutureDays,
   getDayName,
+  getDatesBetween,
 };
