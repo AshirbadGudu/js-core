@@ -1,8 +1,12 @@
 import { currency, day } from "./types";
 
 // Convert an object to array
-const getArrFromObj = (object: { [x: string]: any }, arr: any[] = []) => {
-  for (const id in object) arr.push({ id, ...object[id] });
+const getArrFromObj = (
+  object: { [x: string]: any },
+  key = "id",
+  arr: any[] = []
+) => {
+  for (const id in object) arr.push({ [key]: id, ...object[id] });
   return arr;
 };
 // Convert Firebase snapshot to array
