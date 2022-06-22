@@ -24,3 +24,17 @@
   <br />
 
 </div>
+
+## API
+
+All the available utility function inside `@ashirbad/js-core`
+
+| Name                       | Description                                                    | More |
+| -------------------------- | -------------------------------------------------------------- | ---- |
+| **`getArrFromObj`**        | Convert an object of object to array.                          |      |
+| **`getArrFromSnap`**       | Convert Firebase snapshot to array.                            |      |
+| **`getArrFromNestedSnap`** | Get single array from a firebase nested snapshot.              |      |
+| **`formatCurrency`**       | Convert any number to a formatted currency.                    |      |
+| **`getFutureDays`**        | Get future 7 days.                                             |      |
+| **`getDayName`**           | Get day name with index and by default return today name.      |      |
+| **`getDatesBetween`**      | Create a function that returns array of dates between 2 dates. |      |
