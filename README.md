@@ -1,57 +1,26 @@
-# `@ashirbad/js-core` [![NPM version](https://img.shields.io/npm/v/@ashirbad/js-core.svg?style=flat)](https://www.npmjs.com/package/@ashirbad/js-core) [![NPM version](https://badgen.net/bundlephobia/minzip/@ashirbad/js-core)](https://www.npmjs.com/package/@ashirbad/js-core)
+<div align="center">
+  <h1>
+    <code>
+      @ashirbad/js-core
+    </code> 
+  </h1>
 
-> Contains a set of javascript core utility functions
+  <div>JavaScript utility functions library, ready to use, written in Typescript.</div>
 
-## Installation
+  <br />
 
-Install with [npm](https://www.npmjs.com/):
+  <!-- Badges -->
 
-```sh
-npm i @ashirbad/js-core
-```
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/AshirbadGudu/js-core/issues)
+[![Maintained](https://badgen.net/badge/Maintained%20%3F/Yes%21/blue?icon=github)](https://github.com/AshirbadGudu/js-core/issues)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@ashirbad/js-core)
+![npm](https://img.shields.io/npm/v/@ashirbad/js-core)
+![Downloads](https://img.shields.io/npm/dt/@ashirbad/js-core)
 
-Install with [yarn](https://classic.yarnpkg.com/en/):
+  <!-- BADGE:END -->
 
-```sh
-yarn add @ashirbad/js-core
-```
+  <br />
+    <pre>npm i <a href="https://www.npmjs.com/package/@ashirbad/js-core">@ashirbad/js-core</a></pre>
+  <br />
 
-## Usage
-
-```js
-const { getArrFromObj } = require("@ashirbad/js-core");
-```
-
-### Example
-
-```js
-const { getArrFromObj } = require("@ashirbad/js-core");
-
-const obj = {
-  "user-1": {
-    name: "User One",
-    email: "user1@gmail.com",
-  },
-  "user-2": {
-    name: "User Two",
-    email: "user2@gmail.com",
-  },
-};
-
-const arr = getArrFromObj(obj);
-
-/* arr
-[
-    {
-        id: "user-1", 
-        name:"User One",
-        email:"user1@gmail.com"
-    },
-    {
-        id: "user-2", 
-        name:"User Two",
-        email:"user2@gmail.com"
-    }
-]
-*/
-```
+</div>
