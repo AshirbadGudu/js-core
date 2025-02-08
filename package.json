@@ -27,7 +27,11 @@
     "js-core",
     "utility",
     "helper",
-    "functions"
+    "firebase",
+    "firebase-utils",
+    "firebase-realtime-database",
+    "array",
+    "typescript"
   ],
   "author": "Ashirbad Panigrahi",
   "license": "ISC",
