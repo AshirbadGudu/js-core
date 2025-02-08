@@ -9,7 +9,13 @@
   ],
   "scripts": {
     "start": "node .",
-    "build": "tsc"
+    "clean": "rm -rf dist coverage __tests__/**/*.js __tests__/**/*.d.ts __tests__/*.js __tests__/*.d.ts",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,json}\"",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +36,13 @@
   },
   "homepage": "https://github.com/AshirbadGudu/js-core#readme",
   "devDependencies": {
-    "typescript": "^4.4.3"
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
   }
 }
